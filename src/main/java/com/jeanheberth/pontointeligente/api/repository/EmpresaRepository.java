@@ -4,7 +4,7 @@ import com.jeanheberth.pontointeligente.api.entities.Empresa;
 import jakarta.transaction.Transactional;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface EmpresaRepository extends JpaRepository<EmpresaRepository, Long> {
+public interface EmpresaRepository extends JpaRepository<Empresa, Long> {
     @Transactional
     Empresa findByCnpj(String cnpj);
 
